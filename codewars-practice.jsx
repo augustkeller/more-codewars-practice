@@ -50,12 +50,12 @@
 //"This is an example!" ==> "sihT si na !elpmaxe"
 //"double  spaces"      ==> "elbuod  secaps"
 //My Answer
-let str = 'The quick brown fox jumps over the lazy dog.';
+let string = 'The quick brown fox jumps over the lazy dog.';
 function reverseWords(str) {
     str.split(' ')
     for (const variable of str) {
         variable.split('').reverse().join('');
     }
-    console.log(str)
     return str
 }
+console.log(reverseWords(string))
