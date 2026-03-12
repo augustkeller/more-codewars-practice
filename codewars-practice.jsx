@@ -37,5 +37,5 @@ function maps(x){
 //Function should return true if it is possible and false if not.
 //My Answer
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  // TODO
+  return distanceToPump <= mpg*fuelLeft;
 };
