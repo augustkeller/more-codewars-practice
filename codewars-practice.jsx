@@ -51,5 +51,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 //"double  spaces"      ==> "elbuod  secaps"
 //My Answer
 function reverseWords(str) {
-  str.split(' ')
+    str.split(' ')
+    for (const variable of str) {
+        variable.split('').reverse().join('');
+    }
 }
