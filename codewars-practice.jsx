@@ -36,3 +36,6 @@ function maps(x){
 //Considering these factors, write a function that tells you if it is possible to get to the pump or not.
 //Function should return true if it is possible and false if not.
 //My Answer
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+};
