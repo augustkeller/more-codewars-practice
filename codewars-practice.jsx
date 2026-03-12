@@ -1,6 +1,7 @@
 //Exercise 1
 //Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
+//My Answer
 function squareSum(numbers){
     let squares = [];
     for (const number of numbers) {
@@ -8,3 +9,13 @@ function squareSum(numbers){
     }
     return squares.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 }
+
+//Top Answer
+function squareSum(numbers){
+  return numbers.reduce(function(sum, n){
+    return (n*n) + sum;
+  }, 0)
+}
+
+//Exercise 2
+//Given an array of integers, return a new array with each value doubled.
