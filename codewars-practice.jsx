@@ -6,5 +6,5 @@ function squareSum(numbers){
     for (const number of numbers) {
         squares.push(number*number)
     }
-    
+    return squares.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 }
