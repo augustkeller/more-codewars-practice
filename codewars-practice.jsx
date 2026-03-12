@@ -49,6 +49,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 //Examples:
 //"This is an example!" ==> "sihT si na !elpmaxe"
 //"double  spaces"      ==> "elbuod  secaps"
+//My Answer
 function reverseWords(str) {
-  // Go for it
+  str.split(' ')
 }
