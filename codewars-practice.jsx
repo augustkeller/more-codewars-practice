@@ -43,3 +43,12 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump/mpg <= fuelLeft
 };
+
+//Exercise 4
+//Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+//Examples:
+//"This is an example!" ==> "sihT si na !elpmaxe"
+//"double  spaces"      ==> "elbuod  secaps"
+function reverseWords(str) {
+  // Go for it
+}
