@@ -22,5 +22,9 @@ function squareSum(numbers){
 //For example: [1, 2, 3] --> [2, 4, 6]
 
 function maps(x){
-
+    let doubles = [];
+    for (const num of x) {
+        doubles.push(num*2)
+    }
+    return doubles;
 }
