@@ -39,3 +39,7 @@ function maps(x){
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump <= mpg*fuelLeft;
 };
+//Top Answer
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump/mpg <= fuelLeft
+};
