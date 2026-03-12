@@ -55,4 +55,5 @@ function reverseWords(str) {
     for (const variable of str) {
         variable.split('').reverse().join('');
     }
+    return str
 }
