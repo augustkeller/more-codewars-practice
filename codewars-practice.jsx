@@ -87,3 +87,6 @@ var min = function(list){
 var max = function(list){
     return Math.max(...list);
 }
+//Top Answer
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
