@@ -82,11 +82,8 @@ smash = function (words) {
 //Example: [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
 //My Answer
 var min = function(list){
-    
-    return list[0];
+    return Math.max(list);
 }
-
 var max = function(list){
-    
-    return list[0];
+    return Math.min(list);
 }
