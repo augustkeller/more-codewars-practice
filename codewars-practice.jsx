@@ -53,9 +53,11 @@
 let string = 'The quick brown fox jumps over the lazy dog.';
 function reverseWords(str) {
     let words = str.split(' ');
+    let results = [];
     for (const word of words) {
         word.split('').reverse().join('');
+        results.push(word);
     }
-    return words
+    return results
 }
 console.log(reverseWords(string))
