@@ -56,6 +56,12 @@ function reverseWords(str) {
     for (const word of words) {
         word.split('').reverse().join('');
     }
+<<<<<<< HEAD
     return words
 }
 console.log(reverseWords(string))
+=======
+    return str
+}
+console.log(reverseWords(string))
+>>>>>>> 769fd3a6cd2c4a4b2e1afcbc34f9f0f139191dca
