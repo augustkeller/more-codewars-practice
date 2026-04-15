@@ -120,5 +120,6 @@
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 function removeSmallest(numbers) {
-  return [];
+  const min = Math.min(...numbers);
+  return numbers.slice(numbers.indexOf(min), numbers.indexOf(min + 1));
 }
