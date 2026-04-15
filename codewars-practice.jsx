@@ -91,15 +91,24 @@
 // const min = (list) => Math.min(...list);
 // const max = (list) => Math.max(...list);
 
-//Exercise 7
-//Complete the solution so that it reverses the string passed into it.
-//Example:
-//'world'  =>  'dlrow'
-//'word'   =>  'drow'
+// //Exercise 7
+// //Complete the solution so that it reverses the string passed into it.
+// //Example:
+// //'world'  =>  'dlrow'
+// //'word'   =>  'drow'
+// function solution(str){
+//   if (str <= 1) {
+//     return str;
+//   }
+//   return str[str.length - 1] + solution(str.slice(0, -1));
+// }
 
-function solution(str){
-  if (str <= 1) {
-    return str;
-  }
-  return str[str.length - 1] + solution(str.slice(0, -1));
+//Exercise 8
+//We need a function that can transform a number (integer) into a string.
+//Example:
+//123  --> "123"
+// 999  --> "999"
+// -100 --> "-100"
+function numberToString(num) {
+  // Return a string of the number here!
 }
