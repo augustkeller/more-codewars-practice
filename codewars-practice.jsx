@@ -1,92 +1,102 @@
-//Exercise 1
-//Complete the square sum function so that it squares each number passed into it and then sums the results together.
-//My Answer
-function squareSum(numbers){
-    let squares = [];
-    for (const number of numbers) {
-        squares.push(number*number)
-    }
-    return squares.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-}
-//Top Answer
-function squareSum(numbers){
-  return numbers.reduce(function(sum, n){
-    return (n*n) + sum;
-  }, 0)
-}
+// //Exercise 1
+// //Complete the square sum function so that it squares each number passed into it and then sums the results together.
+// //My Answer
+// function squareSum(numbers){
+//     let squares = [];
+//     for (const number of numbers) {
+//         squares.push(number*number)
+//     }
+//     return squares.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+// }
+// //Top Answer
+// function squareSum(numbers){
+//   return numbers.reduce(function(sum, n){
+//     return (n*n) + sum;
+//   }, 0)
+// }
 
-//Exercise 2
-//Given an array of integers, return a new array with each value doubled.
-//For example: [1, 2, 3] --> [2, 4, 6]
-//My Answer
-function maps(x){
-    let doubles = [];
-    for (const num of x) {
-        doubles.push(num*2)
-    }
-    return doubles;
-}
-//Top Answer
-function maps(x){
-  return x.map(n => n * 2);
-}
+// //Exercise 2
+// //Given an array of integers, return a new array with each value doubled.
+// //For example: [1, 2, 3] --> [2, 4, 6]
+// //My Answer
+// function maps(x){
+//     let doubles = [];
+//     for (const num of x) {
+//         doubles.push(num*2)
+//     }
+//     return doubles;
+// }
+// //Top Answer
+// function maps(x){
+//   return x.map(n => n * 2);
+// }
 
-//Exercise 3
-//You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
-//Considering these factors, write a function that tells you if it is possible to get to the pump or not.
-//Function should return true if it is possible and false if not.
-//My Answer
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  return distanceToPump <= mpg*fuelLeft;
-};
-//Top Answer
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  return distanceToPump/mpg <= fuelLeft
-};
+// //Exercise 3
+// //You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
+// //Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+// //Function should return true if it is possible and false if not.
+// //My Answer
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   return distanceToPump <= mpg*fuelLeft;
+// };
+// //Top Answer
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   return distanceToPump/mpg <= fuelLeft
+// };
 
-//Exercise 4
-//Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
-//Examples:
-//"This is an example!" ==> "sihT si na !elpmaxe"
-//"double  spaces"      ==> "elbuod  secaps"
-//My Answer
-function reverseWords(str) {
-    let words = str.split(' ');
-    let results = [];
-    for (const word of words) {
-        results.push(word.split('').reverse().join(''));
-    }
-    return results.join(' ')
-}
-//Top Answer
-function reverseWords(str) {
-  return str.split(' ').map(function(word){
-    return word.split('').reverse().join('');
-  }).join(' ');
-}
+// //Exercise 4
+// //Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+// //Examples:
+// //"This is an example!" ==> "sihT si na !elpmaxe"
+// //"double  spaces"      ==> "elbuod  secaps"
+// //My Answer
+// function reverseWords(str) {
+//     let words = str.split(' ');
+//     let results = [];
+//     for (const word of words) {
+//         results.push(word.split('').reverse().join(''));
+//     }
+//     return results.join(' ')
+// }
+// //Top Answer
+// function reverseWords(str) {
+//   return str.split(' ').map(function(word){
+//     return word.split('').reverse().join('');
+//   }).join(' ');
+// }
 
-//Exercise 5
-//Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
-//Example:['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
-//My Answer
-function smash (words) {
-   return words.join(" ");
-};
-//Top Answer
-smash = function (words) {
-  return words.join(" ");
-};
+// //Exercise 5
+// //Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+// //Example:['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+// //My Answer
+// function smash (words) {
+//    return words.join(" ");
+// };
+// //Top Answer
+// smash = function (words) {
+//   return words.join(" ");
+// };
 
-//Exercise 6
-//Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively. Each function returns one number.
-//Example: [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
-//My Answer
-var min = function(list){
-    return Math.min(...list);
+// //Exercise 6
+// //Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively. Each function returns one number.
+// //Example: [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+// //My Answer
+// var min = function(list){
+//     return Math.min(...list);
+// }
+// var max = function(list){
+//     return Math.max(...list);
+// }
+// //Top Answer
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+//Exercise 7
+//Complete the solution so that it reverses the string passed into it.
+//Example:
+//'world'  =>  'dlrow'
+//'word'   =>  'drow'
+
+function solution(str){
+  
 }
-var max = function(list){
-    return Math.max(...list);
-}
-//Top Answer
-const min = (list) => Math.min(...list);
-const max = (list) => Math.max(...list);
