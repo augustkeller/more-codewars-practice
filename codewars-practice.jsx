@@ -121,8 +121,8 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 function removeSmallest(numbers) {
   const min = Math.min(...numbers);
-  const beforeMin = 
-  const afterMin =
+  const beforeMin = numbers.slice(0, numbers.indexOf(min))
+  const afterMin = numbers.slice(numbers.indexOf(min) + 1, numbers.length)
   const combined = [...beforeMin, ...afterMin];
   return combined;
 }
