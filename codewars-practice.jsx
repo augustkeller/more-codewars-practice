@@ -143,5 +143,5 @@ function fakeBin(x){
       answer.push(1);
     }
   }
-  return answer;
+  return answer.join();
 }
