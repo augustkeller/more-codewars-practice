@@ -137,7 +137,7 @@
 function fakeBin(x){
   let answer = "";
   for (let i = 0; i < x.length; i++) {
-    if (i < 5) {
+    if (x[i] < 5) {
       answer += "0";
     } else {
       answer += "1";
