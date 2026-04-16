@@ -156,3 +156,7 @@ function fakeBin(x){
 function lovefunc(flower1, flower2){
   return (flower1 + flower2) % 2 === 1;
 }
+//Top Answer
+// function lovefunc(flower1, flower2){
+//   return flower1 % 2 !== flower2 % 2;
+// }
